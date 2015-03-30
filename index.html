@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,target-densitydpi=device-dpi"/>
+
+    <title>Touch Events Demo</title>
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/root.css">
+
+    <link rel="stylesheet" href="css/touch-gallery.css">
+    <link rel="stylesheet" href="css/touch-gallery-custom.css">
+
+</head>
+<body class="index">
+    <div class="container">
+        <div class="page"> <!-- add 'smart' class to make it fixed -->
+            <div class="content">
+                <!-- First Band (Slider) -->        
+                <div id="main-slider">
+                    <div class="gallery-container">
+                        <ul> <!-- ul data-orbit -->
+                            <li>
+                                <div class="row">
+                                    <div class="large-6 column">
+                                        <h1>1</h1>
+                                        <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+                                        <a class="btn_casestudy" href="">View <span>something</span></a>
+                                    </div>
+                                    <div class="large-6 column">
+                                        <img src="img/photo.png" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="large-6 column">
+                                        <h1>2</h1>
+                                        <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
+                                        <a class="btn_casestudy" href="">View <span>something</span></a>
+                                    </div>
+                                    <div class="large-6 column">
+                                        <img src="img/photo.png" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="large-6 column">
+                                        <h1>3</h1>
+                                        <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream.</p>
+                                        <a class="btn_casestudy" href="">View <span>something</span></a>
+                                    </div>
+                                    <div class="large-6 column">
+                                        <img src="img/photo.png" />
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="gallery-prev"><span></span></a>
+                        <a class="gallery-next"><span></span></a>
+                        <ol class="gallery-bullets"></ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/libs/jquery.js"></script>
+    <script src="js/libs/custom.modernizr.js"></script>
+    <script src="js/touch-gallery.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+
+            TouchGallery.init();
+
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+
+.gallery-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.gallery-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+
+.gallery-container ul > li {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-left: 100%; 
+}
+
+.gallery-container ul > li img {
+    display: block;
+    max-width: 100%;
+}
+
+.gallery-container > a {
+}
+
+.gallery-container .gallery-prev,
+.gallery-container .gallery-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+    height: 60px;
+    line-height: 50px;
+    color: white;
+    text-indent: -9999px !important;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.gallery-container .gallery-prev > span,
+.gallery-container .gallery-next > span {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 16px; 
+}
+
+.gallery-container > a.gallery-prev {
+    display: none;
+    left: 0; 
+}
+
+.gallery-container > a.gallery-next {
+    display: none;
+    right: 0; 
+}
+
+.gallery-container > ol.gallery-bullets {
+    clear: both;
+    position: relative;
+    display: none;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.gallery-container > ol.gallery-bullets li {
+    display: block;
+    float: left;
+}
+
+.gallery-container > ol.gallery-bullets li:last-child {
+    margin-right: 0;
+}
+
+

@@ -1,0 +1,145 @@
+
+.gallery-container {
+}
+
+.gallery-container .row {
+    max-width: 90rem;
+}
+
+.gallery-container ul {
+    min-height: 464px !important;
+    -webkit-transition: 0.3s;
+}
+
+.gallery-container ul > li {
+    min-height: 464px !important;
+    background: #c3dbeb;
+}
+
+.gallery-container ul li h1{
+    font-size:4rem;
+    margin-top:2rem;
+    line-height:3.8rem;
+}
+
+.gallery-container ul li p{
+    font-size: 1.4rem;
+    margin-bottom:4rem;
+}
+
+.gallery-container > a {
+}
+
+.gallery-container > a.gallery-prev {
+    display: none;
+}
+
+.gallery-container > a.gallery-prev > span {
+    border-right-style: solid;
+    border-color: transparent;
+    border-right-color: #fff; 
+}
+
+.gallery-container > a.gallery-prev:hover > span {
+    border-right-color: #ccc; 
+}
+
+.gallery-container > a.gallery-next {
+    display: none;
+}
+
+.gallery-container > a.gallery-next > span {
+    border-color: transparent;
+    border-left-style: solid;
+    border-left-color: #fff;
+    left: 50%;
+    margin-left: -8px; 
+}
+
+.gallery-container > a.gallery-next:hover > span {
+    border-left-color: #ccc; 
+}
+
+.gallery-container > ol.gallery-bullets {
+    display: none;
+    width:4.6rem;  /* FIXME: magic number  */
+    top: 30px;  /* FIXME: magic number  */
+    margin-bottom: 30px;  /* FIXME: magic number  */
+}
+
+.gallery-container > ol.gallery-bullets > li {
+    width: 10px;
+    height: 10px;
+    background: #999999;
+    margin-right: 6px;
+    border: none;
+    -webkit-border-radius: 1000px;
+    border-radius: 1000px;
+}
+
+.gallery-container > ol.gallery-bullets li.active {
+    background: #555555;
+}
+
+@media screen and (max-width: 768px) {
+
+    .gallery-container > ol.gallery-bullets {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+
+    .gallery-container > a.gallery-prev {
+        display: none !important;
+    }
+
+    .gallery-container > a.gallery-next {
+        display: none !important;
+    }
+}
+
+/******************************
+** GENERIC STYLE FOR SLIDES ***
+*******************************/
+
+.gallery-container ul li .row {
+}
+
+.gallery-container ul li h1{
+    margin-top:3rem;
+    color:#2b7db2;
+    font-family: 'robotolight';
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.gallery-container ul li p{
+    font-family: 'robotolight';
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-top:2rem;
+    margin-bottom:4rem;
+}
+
+.gallery-container ul li img{
+    max-width:560px;
+    width:100%;
+}
+
+.gallery-container ul li .btn_casestudy{
+    padding:1.5rem 2.5rem 1.5rem 2.5rem;
+    font-family: 'robotolight';
+    font-size:2.2rem;
+    color:#FFFFFF;
+
+    background: #4a7daf; /* Old browsers */
+    background: linear-gradient(top,  #4a7daf 0%, #215c83 100%);
+}
+.gallery-container ul li .btn_casestudy:hover{
+    opacity: 0.8;
+}
+
+.gallery-container ul li .btn_casestudy span{
+    font-family: 'robotoregular';
+}
